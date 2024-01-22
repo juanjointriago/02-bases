@@ -13,12 +13,13 @@ export class AddCharacterComponent {
 
 
   public character: Character = {
+    id:'',
     name: '',
     power: 0
   }
 
   resetForm() {
-    this.character = { name: '', power: 0 };
+    this.character = {id:'', name: '', power: 0 };
   }
   emitCharacter(): void {
     if(this.character.name.length === 0) return;
